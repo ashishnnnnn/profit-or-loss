@@ -1,0 +1,41 @@
+:root{
+    --primary-color:#047857;
+}
+
+
+body{
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input{
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    width: 10%;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+#submit{
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 0.9rem;
+    border: none;
+}
+
+.output-box{
+    margin-top: 0.6rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
