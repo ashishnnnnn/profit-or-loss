@@ -16,12 +16,14 @@ function calculate_proft_and_loss(initial,quantity,current){
     if(initial>current){
         var loss = (initial-current)*quantity;
         var loss_percentage = (loss/(initial*quantity))*100;
+        output_box.style.color = "red";
         var ret = "Loss is "+ loss+ " Loss Percentage is "+loss_percentage+"%";
         return ret;
     }
     else if(current>initial){
         var gain = (current-initial) * quantity;
         var gain_percentage = (gain/(initial * quantity))*100;
+        output_box.style.color = "green";
         var ret = "Gain is "+gain+ " Gain Percentage is " + gain_percentage+"%";
         return ret;
     }
