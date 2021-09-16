@@ -9,7 +9,14 @@ button.addEventListener("click",function show_output(){
     var initial = Number(initial_price.value);
     var quantity = Number(stocks_quantity.value);
     var current = Number(current_price.value);
-    output_box.innerText = calculate_proft_and_loss(initial,quantity,current);
+    if(initial<=0 || quantity<=0 || current<=0){
+        output_box.style.color = "red";
+        output_box.innerText = "Please Enter Positive values";
+    }
+    else{
+        output_box.innerText = calculate_proft_and_loss(initial,quantity,current);
+    }
+    
 })
 
 function calculate_proft_and_loss(initial,quantity,current){
